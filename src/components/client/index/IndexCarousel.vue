@@ -16,9 +16,7 @@
           <div class="mps-title-design mps-title-text">
             markpolo.cn Powered by MPSTO
           </div>
-          <div class="mps-title-ver mps-title-text">
-            MPS (MPB Ver3.) Now Available.
-          </div>
+          <div class="mps-title-ver mps-title-text">MPS Now Available.</div>
         </div>
       </div>
     </div>
@@ -32,13 +30,16 @@ onMounted(() => {});
 <style lang="scss" scoped>
 .mps-comp-index-carousel {
   position: relative;
+
   .mps-comp-index-carousel-main {
     border-radius: 20px;
+
     .mps-cover-img {
       width: 100%;
       height: 750px;
     }
   }
+
   .mps-title-container {
     position: absolute;
     top: 0;
@@ -48,6 +49,7 @@ onMounted(() => {});
     width: 100%;
     height: 100%;
     pointer-events: none;
+
     .mps-title {
       display: flex;
       height: 100%;
@@ -55,25 +57,30 @@ onMounted(() => {});
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .mps-title-blur {
         background-color: rgba(0, 0, 0, 0.35);
         // backdrop-filter: blur(10px);
         padding: 20px 20px 20px 20px;
         border-radius: 20px;
       }
+
       .mps-title-text {
         text-align: center;
         color: white;
         font-family: "Raleway";
+
         &.mps-title-mp {
           margin: 20px 0 20px 0;
           font-size: 100px;
           font-weight: 1000;
         }
+
         &.mps-title-design {
           font-size: 40px;
           font-weight: 800;
         }
+
         &.mps-title-ver {
           margin: 10px 0 10px 0;
           font-size: 35px;

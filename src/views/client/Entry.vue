@@ -1,24 +1,26 @@
 <template>
-  <div class="mps-view-client-entry">
+  <div
+    class="mps-view-client-entry"
+    :style="{ 'background-image': `url(${backgroundUrl})` }"
+  >
     <client-header></client-header>
     <div class="mps-view-client-main">
+      <nest-plugin></nest-plugin>
       <router-view />
     </div>
     <client-footer></client-footer>
   </div>
-  <nest-plugin></nest-plugin>
 </template>
 <script setup>
 import ClientHeader from "@/components/client/ClientHeader.vue";
 import ClientFooter from "@/components/client/ClientFooter.vue";
-import NestPlugin from '@/plugins/nest/NestBackground.vue'
-// import { getCurrentInstance } from "vue";
-// const backgroundUrl = getCurrentInstance().proxy.$var.url.background;
+import NestPlugin from "@/plugins/nest/NestBackground.vue";
+import { getCurrentInstance } from "vue";
+const backgroundUrl = getCurrentInstance().proxy.$var.url.background;
 </script>
 <style lang="scss" scoped>
 .mps-view-client-entry {
   width: 100%;
-  background-image: url($url-bg);
   background-size: auto 100%;
   background-position: center;
   background-attachment: fixed;

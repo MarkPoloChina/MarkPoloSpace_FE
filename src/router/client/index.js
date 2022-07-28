@@ -11,7 +11,7 @@ const routes = [
         component: () => import("@/views/client/index/Index.vue"),
       },
       {
-        path: "/blog",
+        path: "blog",
         name: "blog",
         meta: { title: "博客" },
         component: () => import("@/views/client/blog/Index.vue"),
@@ -21,13 +21,13 @@ const routes = [
         // }]
       },
       {
-        path: "/illust",
+        path: "illust",
         name: "illust",
         meta: { title: "插画" },
         component: () => import("@/views/client/illust/Index.vue"),
       },
       {
-        path: "/about",
+        path: "about",
         name: "about",
         meta: { title: "关于" },
         component: () => import("@/views/client/about/Index.vue"),
