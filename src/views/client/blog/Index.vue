@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 <style lang="scss" scoped>
 .mps-blog-topimg {
-  background-position: center;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
   background-size: cover;
 }

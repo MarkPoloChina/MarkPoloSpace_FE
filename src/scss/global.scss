@@ -10,7 +10,7 @@ $text-gary-color-2: #8f9297;
 $text-gary-color-3: #c8c9c4;
 @font-face {
   font-family: "Raleway";
-  src: url("https://markpolo-1303103554.file.myqcloud.com/static/fonts/raleway.ttf");
+  src: url("https://cloud.markpolo.cn/static/fonts/raleway.ttf");
 }
 .handle-default-a {
   text-decoration: none;
@@ -37,11 +37,20 @@ $text-gary-color-3: #c8c9c4;
   margin: 0 0 20px 0;
   .mps-topimg-text {
     color: white;
-    font-size: 50px;
+    font-size: 5vw;
     font-family: "Raleway";
     font-weight: 1000;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     word-spacing: 40px;
     white-space: nowrap;
   }
 }
+
+$color-stdblue-1: #2e89c0;
+$color-stdblue-2: #5dabdc;
+$color-stdblue-3: #8fd0f0;
+
+$color-greengray-1: #161e21;
+$color-greengray-2: #2c3c49;
+$color-greengray-3: #607b84;
+$color-greengray-4: #b2c5cb;

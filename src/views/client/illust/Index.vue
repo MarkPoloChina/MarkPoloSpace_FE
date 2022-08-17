@@ -65,9 +65,16 @@ onMounted(() => {
   padding: 0 0 20px 0;
 
   .mps-illust-topimg {
-    background-position: 50% 30%;
+    background-position: 50% 55%;
     background-repeat: no-repeat;
     background-size: cover;
+    .mps-topimg-text {
+      color: $text-gary-color-1;
+      background-color: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(10px);
+      padding: 20px 20px 20px 20px;
+      border-radius: 20px;
+    }
   }
 
   .mps-illust-pictd {
@@ -84,6 +91,7 @@ onMounted(() => {
     .mps-illust-pictd-img-container {
       margin: 20px;
       position: relative;
+      max-width: calc(82% - 40px);
 
       .mps-illust-pictd-img {
         border-radius: 20px;

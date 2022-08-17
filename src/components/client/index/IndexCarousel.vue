@@ -60,7 +60,7 @@ onMounted(() => {});
 
       .mps-title-blur {
         background-color: rgba(0, 0, 0, 0.35);
-        // backdrop-filter: blur(10px);
+        backdrop-filter: blur(3px);
         padding: 20px 20px 20px 20px;
         border-radius: 20px;
       }
