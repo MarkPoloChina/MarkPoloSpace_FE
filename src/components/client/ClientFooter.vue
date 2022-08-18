@@ -7,18 +7,17 @@
         >
       </div>
       <div class="mps-footer-row">
-        Copyright © 2020-{{ thisYear }} MP Studio, All Rights Reserved.
-      </div>
-      <div class="mps-footer-row">
         <a
           href="https://beian.miit.gov.cn/"
           target="_blank"
           class="handle-default-a"
-          >闽ICP备2020022020号-1</a
+          >闽ICP备2020022020号-2</a
         >
       </div>
-
-      <div
+      <div class="mps-footer-row">
+        Copyright © 2020-{{ thisYear }} MP Studio, All Rights Reserved.
+      </div>
+      <!-- <div
         style="
           width: 300px;
           margin: 0 auto;
@@ -48,13 +47,13 @@
             闽公网安备 35010202001298号
           </p></a
         >
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>
 <script setup>
-import { getCurrentInstance } from "vue";
-const beianUrl = getCurrentInstance().proxy.$var.url.beian;
+// import { getCurrentInstance } from "vue";
+// const beianUrl = getCurrentInstance().proxy.$var.url.beian;
 const thisYear = new Date().getFullYear();
 </script>
 <style lang="scss" scoped>
@@ -69,7 +68,7 @@ const thisYear = new Date().getFullYear();
   justify-content: center;
   align-items: center;
   border-radius: 20px 20px 0 0;
-  padding-top: 10px;
+  padding: 10px 0 10px 0;
   background-color: rgba(255, 255, 255, 0.7);
   .mps-footer-row {
     width: 100%;

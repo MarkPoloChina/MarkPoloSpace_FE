@@ -1,11 +1,11 @@
 <template>
   <div class="mps-view-client-about">
     <div class="mps-about-thank">
-      <p>Thank You for visitting MPS !!!</p>
+      <div>Thank You for visitting MPS !!!</div>
     </div>
     <div class="mps-about-version">
-      <p>Front-end Ver.3.0.0 2022.5.7</p>
-      <P>Back-end ver3.1.1.0 2022.5.7</P>
+      <div>Front-end Ver.3.0.0 2022.5.7</div>
+      <div>Back-end ver3.1.1.0 2022.5.7</div>
     </div>
     <div class="mps-"></div>
   </div>
@@ -17,8 +17,10 @@
   position: relative;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
+  text-align: center;
+  padding: 10px 0 10px 0;
   .mps-about-thank {
-    text-align: center;
+    padding: 20px 0 20px 0;
     font-size: 50px;
     font-weight: bold;
   }

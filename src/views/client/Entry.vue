@@ -31,7 +31,7 @@ const backgroundUrl = getCurrentInstance().proxy.$var.url.background;
   position: relative;
   padding-top: 70px;
   min-height: calc(100vh - 70px);
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }
 </style>

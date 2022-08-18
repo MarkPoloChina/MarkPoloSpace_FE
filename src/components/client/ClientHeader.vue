@@ -36,24 +36,37 @@ import {
   Files,
 } from "@element-plus/icons-vue";
 import Logo from "@/components/others/LogoSvg.vue";
-import { getCurrentInstance, onMounted, ref } from "vue";
+import { getCurrentInstance, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
+const route = useRoute();
 const theme_main_color_1 =
   getCurrentInstance().proxy.$var.color.theme_main_color_1;
 const activeIndex = ref("");
 onMounted(() => {
-  activeIndex.value = useRoute().path.startsWith("/blog")
+  activeIndex.value = route.path.startsWith("/blog")
     ? "/blog"
-    : useRoute().path.startsWith("/illust")
+    : route.path.startsWith("/illust")
     ? "/illust"
-    : useRoute().path.startsWith("/project")
+    : route.path.startsWith("/project")
     ? "/project"
-    : useRoute().path.startsWith("/")
+    : route.path.startsWith("/")
     ? "/"
     : "";
 });
-
-onMounted(() => {});
+watch(
+  () => route.path,
+  () => {
+    activeIndex.value = route.path.startsWith("/blog")
+      ? "/blog"
+      : route.path.startsWith("/illust")
+      ? "/illust"
+      : route.path.startsWith("/project")
+      ? "/project"
+      : route.path.startsWith("/")
+      ? "/"
+      : "";
+  }
+);
 </script>
 <style lang="scss" scoped>
 .mps-comp-client-header {
